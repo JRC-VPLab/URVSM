@@ -1,4 +1,4 @@
-# Universal Retinal Vessel Segmentation
+# Universal Retinal Vessel Segmentation Model
 
 ## Universal Vessel Segmentation for Multi-Modality Retinal Images (arXiv 2502.06987)
 

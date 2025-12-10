@@ -8,3 +8,19 @@ The three new multi-modal retinal vessel segmentation datasets are available at 
 
 We are diligently preparing for the code, they will be available very soon.
 
+
+## 📄 Citation
+
+If you find this work useful or use the dataset in your work, please consider citing:
+
+```bibtex
+@article{URVSM_TIP_2025,
+  title        = {Universal Vessel Segmentation for Multi-Modality Retinal Images},
+  author       = {Wen, Bo and Heinke, Anna and Agnihotri, Akshay and Bartsch, Dirk-Uwe and Freeman, William and Nguyen, Truong and An, Cheolhong},
+  journal      = {IEEE Transactions on Image Processing},
+  year         = {2025},
+  volume       = {34},
+  pages        = {7903-7918},
+  doi          = {10.1109/TIP.2025.3623893}
+}
+```

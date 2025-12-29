@@ -6,12 +6,66 @@ arXiv: [link](https://arxiv.org/abs/2502.06987); IEEE Xplore: [link](https://iee
 
 The three new multi-modal retinal vessel segmentation datasets are available at [Zenodo](https://zenodo.org/records/17874693).
 
-We are diligently preparing for the code, they will be available very soon.
+
+## Get Started
+
+Recommended dependencies:
+<pre>
+python==3.9.18
+torch==2.1.0
+numpy==1.26.0
+scikit-image==0.24.0
+scikit-learn==1.3.0
+opencv-python==4.8.1.78
+torch-topological==0.1.7
+pillow==10.0.1
+</pre>
+
+### To use the model to segment retinal vessels (output segmentation only): 
+1. Create a new directory in data (recommended) and copy the images (any format PIL.Image supports reading, see dataloader.py for details) in the folder
+<pre>
+./data/dataset_name
+</pre>
+
+2. run
+<pre>
+python segment.py --datapath ./data/dataset_name --note note_name
+</pre>
+
+3. The results, by default are saved to
+<pre>
+./result/note_name/segmentation
+</pre>
+
+### To use the model and compute the segmentation scores (ground truth available)
+1. Create a new directory in data (recommended) with two folders `image` and `label`, copy the raw images and ground truth segmentation into the two folders, respectively.
+<pre>
+-data
+  -dataset_name
+    -image
+      -img_01.png
+      -img_02.png
+      ...
+    -label
+      -gt_01.png
+      -gt_02.png
+      ...
+</pre>
+
+2. run
+<pre>
+python evaluate.py --datapath ./data/dataset_name --note note_name
+</pre>
+
+3. The metrics are printed as output. The segmented images, by default are saved to
+<pre>
+./result/note_name/segmentation
+</pre>
 
 
 ## 📄 Citation
 
-If you find this work useful or use the dataset in your work, please consider citing:
+If you find this work useful or use the dataset in your work, please cite:
 
 ```bibtex
 @article{URVSM_TIP_2025,

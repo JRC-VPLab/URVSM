@@ -8,6 +8,14 @@
 
 - The revised ground truth annotation (in resolution 768x768) with improved quality (especially topological accuracy) for the DRIVE dataset is available at `./DRIVE/gt_revised_768x768`
 
+## Introduction
+
+We identify two major limitations in the existing studies on retinal vessel segmentation: (1) Most existing works are
+restricted to one modality, i.e., the Color Fundus (CF). However, multi-modality retinal images are used every day in the study
+of the retina and diagnosis of retinal diseases, and the study of vessel segmentation on other modalities is scarce; (2) Even
+though a few works extended their experiments to new modalities such as the Multi-Color Scanning Laser Ophthalmoscopy (MC), these works still require fine-tuning a separate model for the new modality. In this work, we introduce the universal retinal vessel segmentation task and present a novel universal vessel segmentation model (URVSM) for multi-modality retinal images. To the best of our knowledge, this is the first modality-agnostic retinal vessel segmentation model, reflecting the real-world need for generalizable solutions in retinal vessel segmentation. We tested our model on numerous commonly-used retinal image modalities from various commonly-used imaging systems. For more details, please refer to our paper.
+
+![Overview](_github/Intro_small.png)
 
 
 ## Get Started

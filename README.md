@@ -2,9 +2,12 @@
 
 ## Universal Vessel Segmentation for Multi-Modality Retinal Images (TIP 2025)
 
-arXiv: [link](https://arxiv.org/abs/2502.06987); IEEE Xplore: [link](https://ieeexplore.ieee.org/document/11218739).
+- IEEE Xplore: [link](https://ieeexplore.ieee.org/document/11218739); arXiv: [link](https://arxiv.org/abs/2502.06987); 
 
-The three new multi-modal retinal vessel segmentation datasets are available at [Zenodo](https://zenodo.org/records/17874693).
+- The three new multi-modal retinal vessel segmentation datasets are available at [Zenodo](https://zenodo.org/records/17874693).
+
+- The revised ground truth annotation (in resolution 768x768) with improved quality (especially topological accuracy) for the DRIVE dataset is available at `./DRIVE/gt_revised_768x768`
+
 
 
 ## Get Started
@@ -61,6 +64,11 @@ python evaluate.py --datapath ./data/dataset_name --note note_name
 <pre>
 ./result/note_name/segmentation
 </pre>
+
+### Training
+For image translation, please refer to [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+
+For topological segmentation, please refer to [SATLoss](https://github.com/JRC-VPLab/SATLoss)
 
 
 ## 📄 Citation

@@ -13,7 +13,7 @@
 We identify two major limitations in the existing studies on retinal vessel segmentation: (1) Most existing works are
 restricted to one modality, i.e., the Color Fundus (CF). However, multi-modality retinal images are used every day in the study
 of the retina and diagnosis of retinal diseases, and the study of vessel segmentation on other modalities is scarce; (2) Even
-though a few works extended their experiments to new modalities such as the Multi-Color Scanning Laser Ophthalmoscopy (MC), these works still require fine-tuning a separate model for the new modality. In this work, we introduce the universal retinal vessel segmentation task and present a novel universal vessel segmentation model (URVSM) for multi-modality retinal images. To the best of our knowledge, this is the first modality-agnostic retinal vessel segmentation model, reflecting the real-world need for generalizable solutions in retinal vessel segmentation. We tested our model on numerous commonly-used retinal image modalities from various commonly-used imaging systems. For more details, please refer to our paper.
+though a few works extended their experiments to new modalities such as the Multi-Color Scanning Laser Ophthalmoscopy (MC), these works still require fine-tuning a separate model for the new modality. In this work, we introduce the universal retinal vessel segmentation task and present a novel universal vessel segmentation model (URVSM) for multi-modality retinal images. To the best of our knowledge, this is the first modality-agnostic retinal vessel segmentation model, reflecting the real-world need for generalizable solutions in retinal vessel segmentation. We tested our model on numerous commonly-used retinal image modalities from various commonly-used imaging systems. For more details, please refer to our paper (links available above).
 
 ![Overview](_github/Intro_small.png)
 
@@ -74,9 +74,9 @@ python evaluate.py --datapath ./data/dataset_name --note note_name
 </pre>
 
 ### Training
-For image translation, please refer to [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+For image translation, please refer to [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 
-For topological segmentation, please refer to [SATLoss](https://github.com/JRC-VPLab/SATLoss)
+For topological segmentation, please refer to [SATLoss](https://github.com/JRC-VPLab/SATLoss).
 
 
 ## 📄 Citation
